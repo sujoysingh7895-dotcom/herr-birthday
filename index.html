@@ -1,0 +1,170 @@
+<!DOCTYPE html>  <html lang="en">  
+<head>  
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<title>Myy Luvvv Ishuu Babieee 🫂🎀</title>  
+<style>  
+*{box-sizing:border-box}  
+body{  
+ margin:0;font-family:Georgia,serif;color:#762746;  
+ background:linear-gradient(140deg,#fff0f5,#ffd6e5,#fff8f2);  
+}  
+main{max-width:700px;margin:auto;padding:20px}  
+.hero{text-align:center;min-height:90vh;display:flex;  
+ flex-direction:column;justify-content:center;align-items:center}  
+h1{font-size:clamp(42px,10vw,70px);color:#b3235a;font-weight:normal}  
+h2{color:#b3235a;font-weight:normal}  
+p{font-size:17px;line-height:1.9}  
+button,.upload{  
+ border:0;border-radius:30px;padding:14px 22px;  
+ background:#e94f88;color:white;font-size:15px;cursor:pointer;  
+ margin:5px;  
+}  
+.card{background:#ffffffd9;border:1px solid #ffc6d9;  
+ border-radius:22px;padding:24px;margin:20px 0;  
+ box-shadow:0 8px 30px #b3235a12}  
+.note{background:#fff0f5;padding:16px;border-left:3px solid #ed6798;  
+ border-radius:8px;line-height:1.8}  
+.hidden{display:none!important}  
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:10px}  
+.gallery img{width:100%;height:210px;object-fit:cover;border-radius:15px}  
+.gift{background:#fff0f5;color:#a52a58;border:1px solid #ffc6d9;  
+ border-radius:16px;padding:20px;width:100%;margin:5px 0}  
+#giftMessage{padding:18px;background:#fff0f5;border-radius:15px;line-height:1.8}  
+.heart{position:fixed;bottom:-40px;animation:float 8s linear infinite;  
+ pointer-events:none;z-index:-1}  
+@keyframes float{to{transform:translateY(-110vh) rotate(360deg);opacity:0}}  
+footer{text-align:center;padding:30px;color:#a54a6c}  
+input{display:none}  
+</style>  
+</head>  
+<body>  
+<main>  
+<section class="hero">  
+ <div>♡ A LITTLE WORLD MADE FOR YOU ♡</div>  
+ <div style="font-size:45px">🍒</div>  
+ <h1>Happy Birthday<br>Myy Luvvv<br>Ishuu Babieee 🫂</h1>  
+ <p>Aaj ka din meri sbse pyaari jaan ke naam ❤️</p>  
+ <button onclick="openLove()">Open your surprise 💌</button>  
+ <br><button onclick="music()">♫ Play birthday music</button>  
+ <p style="font-size:12px">Made with all my love, just for you.</p>  
+</section>  <div id="surprise" class="hidden">  
+<section class="card">  
+<h2>To myy luvvv, my Ishuu babieee 💌</h2>  <p>Happy Birthday betuuu! God bless uh, mere bachhe.  
+I luvvv uhh sooo muchh 🫂❤️ Aaj toh aap birthday girlll ho —  
+sweet 16 se 17 ho gayiii! 🎂</p>  <p>Thank you mere liye sab kuch karne ke liye. Aap bahut  
+pyaari ho, meri beti. Aapko bahut saari success mile, aap  
+apne saare goals achieve karo. Aapke liye shabd hi kam hain…  
+main explain kar hi nahi sakta ki aap mere liye kitni special ho.</p>  <p>Thank you mere saath rehne ke liye, mujhe samjhane ke liye,  
+aur itna Sara pyaar dene ke liye once again Happyy birthdayyy my bbg cheetahh🫂</p>  <p>I missss uh betuuu😭. Kaash hum aaj aapka birthday saath  
+celebrate kar paate. Fir aapko gift ki jagah ek tight sa hug  
+karta 🤭🫂, aur btata ki aap mere liye kitni special ho.  
+, meri bas yahi wish hai ki meri umr bhi aapko  
+lag jaye, aap hmesha hsste-muskurate rho, aur aapko kabhi  
+koi aanch na aaye. 🧿</p>  <p>Thank you meri life mein aane ke liye aur meri life ko itni  
+khushi aur sukoon se bharne ke liye, betuuu aur main thing itni bhi pyaari aur in my lang sexyyy nh bntii jaa🤭😘 and I hope this year  
+brings you peace, confidence, laughter, and every little thing  
+your heart has been wishing for.</p>  <p>Mai perfect nhi hu, but I promise ki aapki feelings ko  
+Smjhne ki, aapki baat sunne ki, aur aapko pyaar aur respect  
+feel karane ki hmesha koshish krunga. Mai hmesha aapke  
+saath rehne ki rhungaa, meri jaan. 🫂</p>  <div class="note">“Aap meri favourite notification hi nahi, mere  
+favourite feeling ho. Aap mere sab kuch ho, mere liye.” 🤭❤️</div>  <p>Thank you meri life mei itni saari softness, happiness aur  
+beautiful memories laane ke liye. Aaj bss aap smile karo,  
+babieee. Aaj ka din aapka hai. ❤️</p>  
+</section>  <section class="card">  
+<h2>Our little memories 📸</h2>  
+<p>Apni favourite photos select karo, babieee ❤️</p>  
+<label class="upload" for="photos">＋ Add our photos</label>  
+<input id="photos" type="file" accept="image/*" multiple>  
+<div class="gallery" id="gallery"></div>  
+</section>  <section class="card">  
+<h2>Little gifts, just for you 🎁</h2>  
+<button class="gift" onclick="gift(0)">💌 When you miss me</button>  
+<button class="gift" onclick="gift(1)">🫂 Your virtual hug</button>  
+<button class="gift" onclick="gift(2)">🌷 A little reminder</button>  
+<button class="gift" onclick="gift(3)">🥂 Secret message</button>  
+<div id="giftMessage" class="hidden"></div>  
+</section>  <section class="card">  
+<h2>Three promises from my heart 🤍</h2>  
+<p>♡ Mai aapki baat sunne aur aapko smjhunga aur jaisa jaisa aap bologe krunga🥰.</p>  
+<p>♡ Aapke hmesha sth rhungaa apnaa 100%dungaa🤭.</p>  
+<p>♡ Aapko kbhu gusse mei yh mood khrb mei kbhi disrespect nhi krunga pyaar se rhunga I luvv uhhh 🎀.</p>  
+</section>  <section class="card" style="text-align:center">  
+<h2>One last thing, meri jaan…</h2>  
+<p>Aapki life hmesha pyaar, sukoon aur khushiyo se bhri rhe bhle hi mai Hoi nh hou❤.  
+Aapke saare dreams pure ho. Hmesha hsste rho, meri jaan. 🧿</p>  
+<h2 style="font-size:28px">I luvvv uhhh,<br>Meri jaan🫂 ❤️</h2>  
+<p>Forever sending you the biggest hug — your sweetieee🎀 </p>  
+<button onclick="hug()">Tap for one last hug 🫂</button>  
+<div id="hug" class="hidden"><h2>🫂🫂🫂</h2>  
+I luvvv uhhh so so much, myy babieee! ❤️</div>  
+</section>  
+</div>  
+<footer>Made with love, for myy luvvv ishuu babieee 🍒</footer>  
+</main>  <script>  
+function openLove(){  
+ document.getElementById('surprise').classList.remove('hidden');  
+ document.getElementById('surprise').scrollIntoView({behavior:'smooth'});  
+}  
+const messages=[  
+"When you miss me, remember your sweetie always with uhh aur bss awazz lgaoo I'm hazirrr. 💌",  
+"Imagine me holding you in the warmest, safest hug ever. 🫂",  
+"You are beautiful, loved, worthy, and capable of wonderful things. 🌷",  
+"Secret message: you are my favourite person, myy luvvv, my Ishuu babieee. I luvvv uhhh! Will uh be mineeee?❤️"  
+];  
+function gift(i){  
+ const box=document.getElementById('giftMessage');  
+ box.textContent=messages[i];box.classList.remove('hidden');  
+}  
+function hug(){  
+ document.getElementById('hug').classList.toggle('hidden');  
+ hearts();  
+}  
+document.getElementById('photos').addEventListener('change',e=>{  
+ const gallery=document.getElementById('gallery');gallery.innerHTML='';  
+ [...e.target.files].forEach(file=>{  
+  const img=document.createElement('img');  
+  img.src=URL.createObjectURL(file);img.alt='Our memory';  
+  gallery.appendChild(img);  
+ });  
+});  
+function hearts(){  
+ for(let i=0;i<18;i++){  
+  const h=document.createElement('div');h.className='heart';  
+  h.textContent=['♡','♥','💕','✨'][Math.floor(Math.random()*4)];  
+  h.style.left=Math.random()*100+'vw';  
+  h.style.animationDuration=(4+Math.random()*5)+'s';  
+  h.style.fontSize=(18+Math.random()*22)+'px';  
+  document.body.appendChild(h);setTimeout(()=>h.remove(),9000);  
+ }  
+}  
+setInterval(()=>{if(Math.random()>.5)heartsOne()},1200);  
+function heartsOne(){  
+ const h=document.createElement('div');h.className='heart';  
+ h.textContent='♡';h.style.left=Math.random()*100+'vw';  
+ h.style.animationDuration='9s';document.body.appendChild(h);  
+ setTimeout(()=>h.remove(),9000);  
+}  
+  
+/* A gentle, original bell-like melody generated in your browser.  
+   Tap the button to start; tap again to stop. */  
+let ctx=null,timer=null,playing=false,n=0;  
+function music(){  
+ if(playing){clearInterval(timer);playing=false;return;}  
+ const AC=window.AudioContext||window.webkitAudioContext;  
+ if(!AC){alert('Music is not supported in this browser.');return;}  
+ ctx=ctx||new AC();ctx.resume();playing=true;  
+ const notes=[523,659,784,659,587,698,880,698,523,659,784,1047];  
+ function play(){  
+  const o=ctx.createOscillator(),g=ctx.createGain();  
+  o.type='sine';o.frequency.value=notes[n++%notes.length];  
+  g.gain.setValueAtTime(.0001,ctx.currentTime);  
+  g.gain.exponentialRampToValueAtTime(.06,ctx.currentTime+.04);  
+  g.gain.exponentialRampToValueAtTime(.0001,ctx.currentTime+.45);  
+  o.connect(g);g.connect(ctx.destination);  
+  o.start();o.stop(ctx.currentTime+.5);  
+ }  
+ play();timer=setInterval(play,480);  
+}  
+</script>  </body>  
+</html>  
